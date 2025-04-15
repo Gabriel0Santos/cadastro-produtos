@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.barra{
+    background-color: rgb(58, 58, 147);
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    font-style: inherit;
+    
+
+}
+
+
+.cadastro{ 
+    width: 50%;
+    max-width: 500px; /* Evita que fique grande demais */
+    padding: 20px; /* Dá um espaço interno para os elementos */
+    background-color: rgb(58, 58, 147);
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+
+}
+
+label{
+    
+    font-weight: bold;
+    display: block;
+    padding: 10px ;
+    font-size: 20px;
+    border-radius: 25px;
+    
+    margin: 5px 0;
+   
+    text-align: center;
+}
+
+input{
+    width: 50%; 
+    background-color: rgb(45, 45, 112);
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+}
+button{
+    padding: 10px;
+    
+}
+
+
+*{ 
+    background-color: rgb(32, 32, 88);
+}
