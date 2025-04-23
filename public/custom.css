@@ -61,3 +61,11 @@ button{
 *{ 
     background-color: rgb(32, 32, 88);
 }
+
+.btn__consulta{
+    position: absolute;
+    top: 76%;
+    left: 62%;
+    
+
+}

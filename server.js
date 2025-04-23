@@ -59,11 +59,23 @@ app.get('/cadastro', (req,res) => {
     res.sendFile(path.join(__dirname, "view", "index.html"))
 })
 
+app.get('/produtos', (req,res) => {
+    res.sendFile(path.join(__dirname, "view", "listar.html"))
+})
 
+app.get('/api/produtos', async (req,res) =>{
+    try{
+        const produtos = await produto.find()
+        res.json(produtos)
+    }
+    catch(err) {
+        res.status(500).json({ message: 'Erro ao buscar produtos', error: err })
+
+    }
+})
 // Chamada do Servidor
 
 app.listen( PORT, () => {
     console.log(`O Servidor está funcinando bem na porta: localhost:${PORT}.`)
 })
-
 

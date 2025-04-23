@@ -31,4 +31,8 @@ document.querySelector('.btn__salvar').addEventListener('click', async () => {
         alert('Erro ao salvar o produto.')
     }
 })
+
+document.querySelector('btn__consulta').addEventListener('click', async () => {
+    
+})
 })
